@@ -99,4 +99,31 @@ $(() => {
     $table.append($trFriday);
 
     $container.append($table)
+
+
+
+    //YEAR 4
+    //removing the wand
+    $('#container h4:contains("Holly Wand with Unicorn Hair Core")').remove();
+
+    //removing the butter beer
+    $('#container ul li:contains("butter beer")').remove();
+
+    //getting a new wand
+    const $newWand = $('<h4>').text('Wonderous Magic Unlimited').css('color','indigo'); //adding color as css styling
+    $container.append($newWand)
+
+    //finding the element "cat"
+    const $pet = $container.find('h4.cat');
+    //placing new wand after cat
+    $pet.after($newWand);
+
+    //sending pet on a mission
+    const $spyPet = $('#container h4.cat').detach();
+        $('body').append($spyPet);                      //appending pet to "body"
+
+    //bringing pet back
+    const $petIsBack = $('body h4.cat').detach();
+        $('#container h4').first().before($petIsBack);  //returning "cat" to its original location (first position)
+
 });
