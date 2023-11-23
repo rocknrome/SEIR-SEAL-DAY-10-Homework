@@ -2,3 +2,11 @@ body {background-color: #53bd96;       /*or any color of your choosing*/
     text-align: center;                  /*aligning text in the center of the body*/
     font-family: fantasy;
 }
+
+.secret {                       /*opacity set for "secret" class*/
+    opacity: 0.5;
+}
+
+li {                            /*no styling fo rthe list*/
+    list-style-type: none;
+}
