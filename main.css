@@ -10,3 +10,16 @@ body {background-color: #53bd96;       /*or any color of your choosing*/
 li {                            /*no styling fo rthe list*/
     list-style-type: none;
 }
+
+table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: left;
+}

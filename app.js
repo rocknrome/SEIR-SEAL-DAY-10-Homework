@@ -38,6 +38,9 @@ $(() => {
     //unsorted list with attributes "storage" and "trunk"
     const $ul = $('<ul>').attr('storage', 'trunk');
 
+
+
+    //YEAR 3
     //adding list items
     $ul.append($('<li>').text('butter beer'));
     $ul.append($('<li>').text('invisibility cloak').addClass('secret'));
@@ -47,4 +50,53 @@ $(() => {
     $ul.append($('<li>').text('Bertie Bott\'s Every Flavor [Jelly] Beans'));
 
     $container.append($ul);
+
+
+
+    //YEAR 4
+    //adding h5 element
+    const $h5 = $('<h5>').text('Spring 2017');
+        $container.append($h5);
+
+    //creating a table
+    const $table = $('<table>');
+
+    //creating thead and th elements
+    const $thead = $('<thead>');
+    $thead.append($('<th>').text('Day'));
+    $thead.append($('<th>').text('Classes'));
+    $table.append($thead);
+
+    //creating elements for each day
+    //Monday
+    const $trMonday = $('<tr>');
+    $trMonday.append($('<td>').text('Monday'));
+    $trMonday.append($('<td>').text('Herbology, Potions'));
+    $table.append($trMonday);
+
+    //Tuesday
+    const $trTuesday = $('<tr>');
+    $trTuesday.append($('<td>').text('Tuesday'));
+    $trTuesday.append($('<td>').text('Divination,  History of Magic'));
+    $table.append($trTuesday);
+
+    //Wednesday
+    const $trWednesday = $('<tr>');
+    $trWednesday.append($('<td>').text('Wednesday'));
+    $trWednesday.append($('<td>').text('Charms, Potions'));
+    $table.append($trWednesday);
+
+    //Thursday
+    const $trThursday = $('<tr>');
+    $trThursday.append($('<td>').text('Thursday'));
+    $trThursday.append($('<td>').text('Transfiguration, Defense Against the Dark Arts'));
+    $table.append($trThursday);
+
+    //Friday
+    const $trFriday = $('<tr>');
+    $trFriday.append($('<td>').text('Friday'));
+    $trFriday.append($('<td>').text('Quidditch practice'));
+    $table.append($trFriday);
+
+    $container.append($table)
 });
