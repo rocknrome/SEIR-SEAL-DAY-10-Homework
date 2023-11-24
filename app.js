@@ -143,4 +143,18 @@ $(() => {
                                                     //the "cat" is a class
     $('li.cat').removeClass('cabbage');
 
+
+
+    //YEAR 7
+    //updating Class Schedule heading
+    $h5.text('Fall 2018');
+
+    //buying more butter beer
+    const $butterBeer = $('<li>').text('Butter beer');  //creating new element in the list
+    $ul.prepend($butterBeer);                           //prepend - placing that item to the top of the list
+
+    //replacing trunk" with "chest"
+    $ul.attr('storge', 'chest');                        //changing attribute of line 38
+
+
 });
