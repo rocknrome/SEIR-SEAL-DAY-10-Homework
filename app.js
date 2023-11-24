@@ -102,7 +102,7 @@ $(() => {
 
 
 
-    //YEAR 4
+    //YEAR 5
     //removing the wand
     $('#container h4:contains("Holly Wand with Unicorn Hair Core")').remove();
 
@@ -120,10 +120,27 @@ $(() => {
 
     //sending pet on a mission
     const $spyPet = $('#container h4.cat').detach();
-        $('body').append($spyPet);                      //appending pet to "body"
+        //appending pet to "body"
+        $('body').append($spyPet);
 
     //bringing pet back
     const $petIsBack = $('body h4.cat').detach();
-        $('#container h4').first().before($petIsBack);  //returning "cat" to its original location (first position)
+        //returning "cat" to its original location (first position)
+        $('#container h4').first().before($petIsBack);
+
+
+
+    //YEAR 6
+    //hiding all of the belongings that are class of "Secret"
+    $('.secret').delay(2000).hide('slow');
+
+    //show the items from the class "secret" again
+    $('.secret').delay(2000).show('slow')
+
+    //transmogrifying leash into hals cabbage
+    $('li.cat').addClass('cabbage');                //also the color f the class changes based on the new rule set in css
+                                                    //it is a list item with class "cat"
+                                                    //the "cat" is a class
+    $('li.cat').removeClass('cabbage');
 
 });
